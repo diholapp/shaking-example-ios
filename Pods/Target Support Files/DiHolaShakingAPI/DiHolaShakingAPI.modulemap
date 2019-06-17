@@ -1,0 +1,6 @@
+framework module DiHolaShakingAPI {
+  umbrella header "DiHolaShakingAPI-umbrella.h"
+
+  export *
+  module * { export * }
+}

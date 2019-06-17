@@ -1,0 +1,16 @@
+PODS:
+  - DiHolaShakingAPI (0.1.8)
+
+DEPENDENCIES:
+  - DiHolaShakingAPI (~> 0.1.8)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - DiHolaShakingAPI
+
+SPEC CHECKSUMS:
+  DiHolaShakingAPI: 00144952caca8dc082f837d19695d2f8ed02c049
+
+PODFILE CHECKSUM: 856e986de43e4537d506d3c559a4d023991ba3b8
+
+COCOAPODS: 1.6.1

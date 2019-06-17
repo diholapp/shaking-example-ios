@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ShakingExample" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to DiHola Shaking API!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UVt-nx-Pwy">
+                                <rect key="frame" x="64.5" y="225" width="246.5" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UD1-Wf-DeD">
+                                <rect key="frame" x="170.5" y="318.5" width="34" height="30"/>
+                                <state key="normal" title="Start"/>
+                                <connections>
+                                    <action selector="button:" destination="BYZ-38-t0r" eventType="touchUpInside" id="JQR-yN-ce1"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Click start" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5J1-h7-1hc">
+                                <rect key="frame" x="149" y="273" width="77.5" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="295" translatesAutoresizingMaskIntoConstraints="NO" id="egg-Ve-LV2">
+                                <rect key="frame" x="16" y="372" width="343" height="92"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="UD1-Wf-DeD" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Is1-k2-cDu"/>
+                            <constraint firstItem="5J1-h7-1hc" firstAttribute="top" secondItem="UVt-nx-Pwy" secondAttribute="bottom" constant="27" id="MlV-Cs-Vjo"/>
+                            <constraint firstItem="UD1-Wf-DeD" firstAttribute="top" secondItem="5J1-h7-1hc" secondAttribute="bottom" constant="24.5" id="bmv-H2-Pk3"/>
+                            <constraint firstItem="egg-Ve-LV2" firstAttribute="top" secondItem="UD1-Wf-DeD" secondAttribute="bottom" constant="36.5" id="cWI-ZN-QL4"/>
+                            <constraint firstItem="5J1-h7-1hc" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="htl-xU-Kmi"/>
+                            <constraint firstItem="UVt-nx-Pwy" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="qLs-1x-Mt2"/>
+                            <constraint firstItem="UD1-Wf-DeD" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="tu5-It-X7C"/>
+                            <constraint firstItem="egg-Ve-LV2" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="whZ-rs-Vtn"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="actionLabel" destination="5J1-h7-1hc" id="7eN-WU-jpq"/>
+                        <outlet property="button" destination="UD1-Wf-DeD" id="MQL-y4-9tu"/>
+                        <outlet property="resultLabel" destination="egg-Ve-LV2" id="QFm-Ob-epJ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="119.1904047976012"/>
+        </scene>
+    </scenes>
+</document>
