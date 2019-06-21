@@ -39,10 +39,7 @@ class ViewController: UIViewController {
                                      onSuccess: successHandler,
                                      onError: errorHandler)
         
-        
         NotificationCenter.default.addObserver(self, selector: #selector(appMovedToBackground), name: UIApplication.didEnterBackgroundNotification, object: nil)
-        
-        NotificationCenter.default.addObserver(self, selector: #selector(appCameToForeground), name: UIApplication.willEnterForegroundNotification, object: nil)
     }
     
     func shakingHandler(){
@@ -112,14 +109,8 @@ class ViewController: UIViewController {
     
     
     @objc func appMovedToBackground() {
-        print("App enters background")
-        //self.stopAPI()
+        self.stopAPI()
     }
-    
-    @objc func appCameToForeground() {
-        print("App enters foreground")
-    }
-
 
 }
 
